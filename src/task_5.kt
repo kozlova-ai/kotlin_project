@@ -1,9 +1,7 @@
 fun main() {
-    println("Введите слово")
+    println("Введите несколько слов")
     var line = readLine().toString()
     var lineArray = line.split(" ").toTypedArray().groupingBy { it }.eachCount()
-
-    var max: Int = 0
     data class Word(
         val key: String,
         val count: Int
